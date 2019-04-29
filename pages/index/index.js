@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var WXP = require('../../lib/wxp.min.js').default
 
 Page({
   data: {
