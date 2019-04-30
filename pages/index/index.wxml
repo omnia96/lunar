@@ -1,1 +1,26 @@
-
+<view class="container">
+    <view class="header">
+      <view class="lunar-monthSize">{{lunarInfo.monthSize}}</view>
+      <view class="years">
+        <view class="years-number">{{lunarInfo.yearsNumber}}</view>
+        <view class="years-lunar">{{lunarInfo.yearsLunar}}</view>
+      </view>
+      <view class="lunar-month">{{lunarInfo.lunarMonth}}</view>
+    </view>
+    <view class="today">
+      <view class="yesterday" bind:tap="handleForward">《</view>
+      <view class="today-number">{{lunarInfo.todayNumber}}</view>
+      <view class="tomorrow" bind:tap="handleBack">》</view>
+    </view>
+    <view class="content">
+      <view class="content-header">
+        <view class="date-lunar">{{lunarInfo.dateLunar}}</view>
+        <view class="years-logo"></view>
+        <view class="week">{{lunarInfo.week}}</view>
+      </view>
+      <view class="content-item" wx:for="{{lunarInfo.auspicious}}" wx:key="index" wx:index="index" wx:item="item">
+        <view class="title">{{item.title}}</view>
+        <view class="contents">{{item.content}}</view>
+      </view>
+    </view>
+  </view>

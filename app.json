@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/calendar/calendar",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -8,6 +9,20 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "backgroundColor":"white",
+    "selectedColor":"black",
+    "list":[ 
+      {
+      "pagePath":"pages/calendar/calendar",
+      "text":"ca"
+      },
+      {
+        "pagePath":"pages/index/index",
+        "text":"b"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
